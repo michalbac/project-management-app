@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts :: header"></head>
+
+<body>
+<nav th:replace="layouts :: navbar"></nav>
+<div class="container">
+    <h3>Employee Directory</h3>
+    <hr>
+
+    <!--  Add New Employee Button -->
+    <a th:href="@{/employees/new}"
+       class="btn btn-primary btn-sm mb-3"> 
+        Add Employee 
+    </a> 
+    <br></br>
+    <table th:replace="layouts :: employees"></table>
+</div>
+
+</body>
+</html>
