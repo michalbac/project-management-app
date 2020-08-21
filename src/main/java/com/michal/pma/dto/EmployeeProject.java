@@ -1,5 +1,7 @@
 package com.michal.pma.dto;
 
 public interface EmployeeProject {
-    public String firstName;
+    public String getFirstName();
+    public String getLastName();
+    public int getProjectCount();
 }

@@ -44,6 +44,6 @@ public class ProjectController {
         List<Project> projects = projectRepository.findAll();
         model.addAttribute("projects", projects);
         return"projects/all-projects";
-
     }
+
 }

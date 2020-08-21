@@ -8,11 +8,20 @@
 <nav th:replace="layouts :: navbar"></nav>
 <div class="container">
 <form method="post" action="/employees/create" th:object="${employee}">
-    <input type="text" placeholder="First name" th:field="${employee.firstName}">
-    <input type="text" placeholder="Last name" th:field="${employee.lastName}">
-    <input type="text" placeholder="email" th:field="${employee.email}">
-    <button type="submit">Create Employee</button>
-</form>
+    <br>
+    <div class="form-group">
+    <input class="form-control" type="text" placeholder="First name" th:field="${employee.firstName}">
+    </div>
+    <div class="form-group">
+    <input class="form-control" type="text" placeholder="Last name" th:field="${employee.lastName}">
+    </div>
+    <div class="form-group">
+    <input class="form-control" type="text" placeholder="email" th:field="${employee.email}">
+    </div>
+    <div class="form-group">
+    <button class="btn btn-secondary" type="submit">Create Employee</button>
+    </div>
+    </form>
 </div>
 
 </body>

@@ -10,27 +10,35 @@
 <!--<nav th:replace="layouts :: navbar"></nav>-->
 
 <div class="container">
+
     <form action="/projects/save" th:object="${project}" method="POST">
+        <br>
+        <div class="form-group">
+        <input type="text" placeholder="Project Name" th:field="${project.name}" class="form-control">
+        </div>
 
-        <input type="text" placeholder="Project Name" th:field="${project.name}">
-
-        <select th:field="${project.stage}">
+            <div class="form-group">
+        <select th:field="${project.stage}" class="form-control">
             <option th:value="NOTSTARTED"> Not Started</option>
             <option th:value="INPROGRESS"> In Progress</option>
             <option th:value="COMPLETED"> Completed</option>
         </select>
-
-        <textarea type="text" placeholder="Enter Project Description" th:field="${project.description}"></textarea>
-
-        <select th:field="*{employees}" multiple="multiple">
+            </div>
+                <div class="form-group">
+        <textarea type="text" placeholder="Enter Project Description" th:field="${project.description}" class="form-control"></textarea>
+                </div>
+                    <div class="form-group">
+        <select th:field="*{employees}" multiple="multiple" class="form-control">
             <option th:each="employee : ${allEmployees}"
-                    th:value="${employee.id}"
-                    th:text="${employee.firstName}"></option>
+                    th:value="${employee.employeeId}"
+                    th:text="${employee.firstName + ' ' + employee.lastName}"></option>
         </select>
+                    </div>
 
-        <button type="submit">Create Project</button>
+        <button type="submit" class="btn btn-secondary">Create Project</button>
 
     </form>
+    </div>
 </div>
 
 </body>
