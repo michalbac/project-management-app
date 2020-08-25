@@ -1,9 +1,9 @@
 package com.michal.pma.controllers;
 
 import com.michal.pma.dao.EmployeeRepository;
-import com.michal.pma.dao.ProjectRepository;
 import com.michal.pma.entities.Employee;
 import com.michal.pma.entities.Project;
+import com.michal.pma.services.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,7 +18,7 @@ import java.util.List;
 public class ProjectController {
 
     @Autowired
-    ProjectRepository projectRepository;
+    ProjectService projectService;
 
     @Autowired
     EmployeeRepository employeeRepository;
@@ -34,14 +34,14 @@ public class ProjectController {
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String createProject(Project project, Model model){
-        projectRepository.save(project);
+        projectService.save(project);
 
         return "redirect:/projects";
     }
 
     @GetMapping
     public String displayProjects(Model model){
-        List<Project> projects = projectRepository.findAll();
+        List<Project> projects = projectService.findAll();
         model.addAttribute("projects", projects);
         return"projects/all-projects";
     }
