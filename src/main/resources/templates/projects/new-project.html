@@ -11,7 +11,7 @@
 
 <div class="container">
 
-    <form action="/projects/save" th:object="${project}" method="POST">
+    <form th:action="@{/projects/save}" th:object="${project}" method="POST">
         <br>
         <div class="form-group">
         <input type="text" placeholder="Project Name" th:field="${project.name}" class="form-control">
@@ -34,7 +34,6 @@
                     th:text="${employee.firstName + ' ' + employee.lastName}"></option>
         </select>
                     </div>
-
         <button type="submit" class="btn btn-primary btn-sm mb-3">Create Project</button>
 
     </form>

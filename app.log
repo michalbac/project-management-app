@@ -1,0 +1,1523 @@
+2020-09-05 15:04:27.945  INFO 12948 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 12948 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-05 15:04:27.960 DEBUG 12948 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-05 15:04:27.962  INFO 12948 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-05 15:04:28.071  INFO 12948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-05 15:04:28.072  INFO 12948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-05 15:04:29.689  INFO 12948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-05 15:04:29.804  INFO 12948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99ms. Found 3 JPA repository interfaces.
+2020-09-05 15:04:31.287  INFO 12948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-05 15:04:31.663  INFO 12948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3591 ms
+2020-09-05 15:04:34.514  INFO 12948 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-05 15:04:34.802  INFO 12948 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:04:35.228  WARN 12948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-05 15:04:35.641  INFO 12948 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ef18f3b, org.springframework.security.web.context.SecurityContextPersistenceFilter@4537db56, org.springframework.security.web.header.HeaderWriterFilter@48a566e5, org.springframework.security.web.csrf.CsrfFilter@332e76db, org.springframework.security.web.authentication.logout.LogoutFilter@39ab64c1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6caa83e5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@675ee4c0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4a672de8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64ee83fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4433b1bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@649d6d61, org.springframework.security.web.session.SessionManagementFilter@5818a989, org.springframework.security.web.access.ExceptionTranslationFilter@7ffb9b1f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@608148fb]
+2020-09-05 15:04:36.572  INFO 12948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-05 15:04:36.647  INFO 12948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-05 15:04:36.651  INFO 12948 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-05 15:04:36.750  WARN 12948 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository' defined in com.michal.pma.dao.EmployeeRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not instantiate id generator [entity-name=com.michal.pma.entities.UserAccount]
+2020-09-05 15:04:36.755  INFO 12948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:04:36.756  WARN 12948 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not instantiate id generator [entity-name=com.michal.pma.entities.UserAccount]
+2020-09-05 15:04:36.757  INFO 12948 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:04:38.864  INFO 12948 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-05 15:04:38.886 ERROR 12948 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository' defined in com.michal.pma.dao.EmployeeRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not instantiate id generator [entity-name=com.michal.pma.entities.UserAccount]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1697) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:624) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51) ~[spring-data-commons-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36) ~[spring-data-commons-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at com.michal.pma.ProjectManagmentApplication.main(ProjectManagmentApplication.java:11) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not instantiate id generator [entity-name=com.michal.pma.entities.UserAccount]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 33 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not instantiate id generator [entity-name=com.michal.pma.entities.UserAccount]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_181]
+Caused by: org.hibernate.MappingException: Could not instantiate id generator [entity-name=com.michal.pma.entities.UserAccount]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.createIdentifierGenerator(DefaultIdentifierGeneratorFactory.java:124) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+	at org.hibernate.mapping.SimpleValue.createIdentifierGenerator(SimpleValue.java:355) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+	at org.hibernate.internal.SessionFactoryImpl.lambda$new$1(SessionFactoryImpl.java:288) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:1.8.0_181]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[na:1.8.0_181]
+	at java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1625) ~[na:1.8.0_181]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[na:1.8.0_181]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[na:1.8.0_181]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:1.8.0_181]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:1.8.0_181]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:1.8.0_181]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418) ~[na:1.8.0_181]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:287) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 4 common frames omitted
+Caused by: org.hibernate.MappingException: The increment size of the [user_accounts_seq] sequence is set to [50] in the entity mapping while the associated database sequence increment size is [1].
+	at org.hibernate.id.enhanced.SequenceStyleGenerator.configure(SequenceStyleGenerator.java:261) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.createIdentifierGenerator(DefaultIdentifierGeneratorFactory.java:118) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+	... 21 common frames omitted
+
+2020-09-05 15:06:29.919  INFO 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 13384 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-05 15:06:29.924 DEBUG 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-05 15:06:29.924  INFO 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-05 15:06:29.981  INFO 13384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-05 15:06:29.981  INFO 13384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-05 15:06:31.037  INFO 13384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-05 15:06:31.163  INFO 13384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 3 JPA repository interfaces.
+2020-09-05 15:06:32.244  INFO 13384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-05 15:06:32.664  INFO 13384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2683 ms
+2020-09-05 15:06:34.764  INFO 13384 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-05 15:06:34.996  INFO 13384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:06:35.354  WARN 13384 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-05 15:06:35.715  INFO 13384 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e8c5b8c, org.springframework.security.web.context.SecurityContextPersistenceFilter@523daa94, org.springframework.security.web.header.HeaderWriterFilter@739a7840, org.springframework.security.web.csrf.CsrfFilter@74b8e245, org.springframework.security.web.authentication.logout.LogoutFilter@7bf5fb69, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1cfc28d3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@300d9b49, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@269b5f17, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f675de6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a051e39, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d1db1c6, org.springframework.security.web.session.SessionManagementFilter@7e9fc8, org.springframework.security.web.access.ExceptionTranslationFilter@f843088, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55017879]
+2020-09-05 15:06:36.433  INFO 13384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-05 15:06:36.495  INFO 13384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-05 15:06:36.500  INFO 13384 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-05 15:06:37.074  INFO 13384 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:06:37.474  INFO 13384 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-05 15:06:37.491  INFO 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 8.135 seconds (JVM running for 11.497)
+2020-09-05 15:06:46.218  INFO 13384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-05 15:06:46.241  INFO 13384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-09-05 15:06:46.378 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:06:46.383 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:06:46.383 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:06:47.305 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:06:47.306 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@5cdb1fd5, com.michal.pma.entities.Project@376f9131, com.michal.pma.entities.Project@696dc0d], projectStatus=[{"count":1,"stage":"INPROGRESS"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5cda7443, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@628883c2, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@57f8a62f]}]
+2020-09-05 15:06:47.308 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:07:17.021 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:07:17.022 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{}]
+2020-09-05 15:07:17.023 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:07:17.039 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:07:17.040 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{employees=[com.michal.pma.entities.Employee@16a858fa, com.michal.pma.entities.Employee@108cb471, com.michal.pma.entities.Employee@2ff955ee]}]
+2020-09-05 15:07:17.040 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:07:18.213 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:07:18.214 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{}]
+2020-09-05 15:07:18.214 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:07:18.224 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:07:18.224 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{projects=[com.michal.pma.entities.Project@6a793ab1, com.michal.pma.entities.Project@23865a31, com.michal.pma.entities.Project@3bc79962]}]
+2020-09-05 15:07:18.224 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:07:58.994 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:07:58.994 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.SecurityController.register () with arguments [s] = [{}]
+2020-09-05 15:07:58.995 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:07:58.999 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:07:58.999 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.SecurityController.register () with arguments [s] = [{userAccount=com.michal.pma.entities.UserAccount@748c74a7}]
+2020-09-05 15:07:59.000 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:08:34.934 DEBUG 13384 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:08:34.935 DEBUG 13384 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.SecurityController.saveUser () with arguments [s] = [{userAccount=com.michal.pma.entities.UserAccount@64d1b297, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.michal.pma.entities.UserAccount@64d1b297]
+2020-09-05 15:08:34.935 DEBUG 13384 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:08:35.117 DEBUG 13384 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:08:35.118 DEBUG 13384 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.SecurityController.saveUser () with arguments [s] = [{userAccount=com.michal.pma.entities.UserAccount@64d1b297, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.michal.pma.entities.UserAccount@64d1b297]
+2020-09-05 15:08:35.118 DEBUG 13384 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:08:35.138 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:08:35.139 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:08:35.139 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:08:35.151 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:08:35.151 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@1978b30a, com.michal.pma.entities.Project@6c319312, com.michal.pma.entities.Project@44543bae], projectStatus=[{"count":1,"stage":"INPROGRESS"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@36207636, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2fe73da8, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@10aff154]}]
+2020-09-05 15:08:35.152 DEBUG 13384 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:27:15.124  INFO 13384 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:27:15.225  INFO 13384 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:27:17.098  INFO 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 13384 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-05 15:27:17.098 DEBUG 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-05 15:27:17.098  INFO 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-05 15:27:18.156  INFO 13384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-05 15:27:18.239  INFO 13384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 3 JPA repository interfaces.
+2020-09-05 15:27:20.414  INFO 13384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-05 15:27:21.463  INFO 13384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4354 ms
+2020-09-05 15:27:23.796  INFO 13384 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-05 15:27:23.880  INFO 13384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:27:24.036  WARN 13384 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-05 15:27:24.221  INFO 13384 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:27:24.523  INFO 13384 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0f2f2c51-3821-41ff-af54-20b00869cc1b
+
+2020-09-05 15:27:24.591  INFO 13384 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19c442cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f7302b0, org.springframework.security.web.header.HeaderWriterFilter@a9e5220, org.springframework.security.web.csrf.CsrfFilter@4f0e0e4a, org.springframework.security.web.authentication.logout.LogoutFilter@16a523e4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3d95a87, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7e50681c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@66a4649a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@15e3004b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7793d1ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fe4926c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b48c15d, org.springframework.security.web.session.SessionManagementFilter@70303ea2, org.springframework.security.web.access.ExceptionTranslationFilter@504d12a0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43048bd4]
+2020-09-05 15:27:24.808  INFO 13384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-05 15:27:24.842  INFO 13384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-05 15:27:24.850  INFO 13384 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-05 15:27:25.068  INFO 13384 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-05 15:27:25.080  INFO 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 8.119 seconds (JVM running for 1259.083)
+2020-09-05 15:27:25.093  INFO 13384 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) found bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$DefaultConfigurerAdapter'; @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-09-05 15:28:01.386  INFO 13384 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:28:01.388  INFO 13384 --- [Thread-31] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:28:01.893  INFO 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 13384 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-05 15:28:01.894 DEBUG 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-05 15:28:01.895  INFO 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-05 15:28:02.620  INFO 13384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-05 15:28:02.680  INFO 13384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 3 JPA repository interfaces.
+2020-09-05 15:28:03.928  INFO 13384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-05 15:28:04.608  INFO 13384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2706 ms
+2020-09-05 15:28:07.671  INFO 13384 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-05 15:28:07.781  INFO 13384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:28:08.064  WARN 13384 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-05 15:28:08.186  INFO 13384 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:28:08.239  INFO 13384 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@897f9d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1415e0, org.springframework.security.web.header.HeaderWriterFilter@21ef388f, org.springframework.security.web.csrf.CsrfFilter@45c3fe7b, org.springframework.security.web.authentication.logout.LogoutFilter@31fbc16b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6c3d4d1a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@27bc37e1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@282224a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@555c76da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@daf17be, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ffec3cb, org.springframework.security.web.session.SessionManagementFilter@5afe18e2, org.springframework.security.web.access.ExceptionTranslationFilter@2f6f4e46, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d0549de]
+2020-09-05 15:28:08.866  INFO 13384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-05 15:28:08.906  INFO 13384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-05 15:28:08.908  INFO 13384 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-05 15:28:09.157  INFO 13384 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-05 15:28:09.167  INFO 13384 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 7.378 seconds (JVM running for 1303.17)
+2020-09-05 15:28:09.182  INFO 13384 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' securityConfiguration (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-09-05 15:28:18.779  INFO 13384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-05 15:28:18.798  INFO 13384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-09-05 15:28:37.953 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:28:37.955 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:28:37.955 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:28:38.027 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:28:38.031 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@bce4ece, com.michal.pma.entities.Project@28781928, com.michal.pma.entities.Project@47a36ed1], projectStatus=[{"count":1,"stage":"INPROGRESS"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5485a0f, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@55bb8120, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@239eafcd]}]
+2020-09-05 15:28:38.031 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:29:13.956 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:29:13.958 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{}]
+2020-09-05 15:29:13.958 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:29:13.979 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:29:13.980 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{projects=[com.michal.pma.entities.Project@125f1bd2, com.michal.pma.entities.Project@73b9cfb8, com.michal.pma.entities.Project@6abdc18b]}]
+2020-09-05 15:29:13.980 DEBUG 13384 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:30:33.219 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:30:33.219 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:30:33.219 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:30:33.234 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:30:33.236 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@52830bc5, com.michal.pma.entities.Project@66b3cedc, com.michal.pma.entities.Project@15d51d3d], projectStatus=[{"count":1,"stage":"INPROGRESS"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@ffb8fef, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@46794af3, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@74c69055]}]
+2020-09-05 15:30:33.236 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:33:51.751 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:33:51.752 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{}]
+2020-09-05 15:33:51.753 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:33:51.763 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:33:51.764 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{projects=[com.michal.pma.entities.Project@5267c188, com.michal.pma.entities.Project@42ce422c, com.michal.pma.entities.Project@1b570ac4]}]
+2020-09-05 15:33:51.764 DEBUG 13384 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:33:55.621 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:33:55.622 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{}]
+2020-09-05 15:33:55.622 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:33:55.627 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:33:55.627 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{projects=[com.michal.pma.entities.Project@7cbe33b8, com.michal.pma.entities.Project@69984d88, com.michal.pma.entities.Project@4cbd5075]}]
+2020-09-05 15:33:55.628 DEBUG 13384 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:33:56.472 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:33:56.473 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:33:56.473 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:33:56.491 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:33:56.492 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@4859482f, com.michal.pma.entities.Project@6f063e88, com.michal.pma.entities.Project@52dae4eb], projectStatus=[{"count":1,"stage":"INPROGRESS"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@63deb720, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3752e7b9, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2a22d5ca]}]
+2020-09-05 15:33:56.494 DEBUG 13384 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:34:13.008  INFO 5052 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 5052 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-05 15:34:13.017 DEBUG 5052 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-05 15:34:13.017  INFO 5052 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-05 15:34:13.097  INFO 5052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-05 15:34:13.099  INFO 5052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-05 15:34:14.544  INFO 5052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-05 15:34:14.695  INFO 5052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133ms. Found 3 JPA repository interfaces.
+2020-09-05 15:34:16.242  INFO 5052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-05 15:34:16.744  INFO 5052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3645 ms
+2020-09-05 15:34:19.555  INFO 5052 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-05 15:34:19.807  INFO 5052 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:34:20.142  WARN 5052 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-05 15:34:20.487  INFO 5052 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7744cd24, org.springframework.security.web.context.SecurityContextPersistenceFilter@53752cc1, org.springframework.security.web.header.HeaderWriterFilter@105b6153, org.springframework.security.web.csrf.CsrfFilter@296681ae, org.springframework.security.web.authentication.logout.LogoutFilter@ac82226, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@160a7c38, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1dbdc64d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2d148ab7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29e18404, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1944ab3f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19439d8d, org.springframework.security.web.session.SessionManagementFilter@7eca704, org.springframework.security.web.access.ExceptionTranslationFilter@77b3d312, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b05dc4]
+2020-09-05 15:34:21.202  INFO 5052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-05 15:34:21.302  INFO 5052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-05 15:34:21.310  INFO 5052 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-05 15:34:22.071  INFO 5052 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:34:22.530  INFO 5052 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-05 15:34:22.547  INFO 5052 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 10.388 seconds (JVM running for 15.137)
+2020-09-05 15:34:30.455  INFO 5052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-05 15:34:30.469  INFO 5052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-09-05 15:34:30.569 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:34:30.572 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:34:30.573 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:34:31.233 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:34:31.234 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@524ee750, com.michal.pma.entities.Project@d3171e1, com.michal.pma.entities.Project@10751444], projectStatus=[{"count":1,"stage":"INPROGRESS"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@e3aa510, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5041ba17, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@73815ae8]}]
+2020-09-05 15:34:31.235 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:34:33.628 DEBUG 5052 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:34:33.629 DEBUG 5052 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{}]
+2020-09-05 15:34:33.629 DEBUG 5052 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:34:33.648 DEBUG 5052 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:34:33.649 DEBUG 5052 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{employees=[com.michal.pma.entities.Employee@2ddcea58, com.michal.pma.entities.Employee@219666ba, com.michal.pma.entities.Employee@7a325282]}]
+2020-09-05 15:34:33.650 DEBUG 5052 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:34:40.515 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:34:40.515 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{}]
+2020-09-05 15:34:40.516 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:34:40.517 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:34:40.517 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{employee=com.michal.pma.entities.Employee@56f21ff3}]
+2020-09-05 15:34:40.517 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:35:46.773 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:35:46.774 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{}]
+2020-09-05 15:35:46.775 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:35:46.776 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:35:46.776 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{employee=com.michal.pma.entities.Employee@479068f3}]
+2020-09-05 15:35:46.776 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:35:50.490  INFO 5052 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:35:50.495  INFO 5052 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:35:51.196  INFO 5052 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 5052 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-05 15:35:51.198 DEBUG 5052 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-05 15:35:51.198  INFO 5052 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-05 15:35:52.021  INFO 5052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-05 15:35:52.090  INFO 5052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 3 JPA repository interfaces.
+2020-09-05 15:35:53.344  INFO 5052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-05 15:35:54.003  INFO 5052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2800 ms
+2020-09-05 15:35:56.748  INFO 5052 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-05 15:35:56.817  INFO 5052 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:35:56.958  WARN 5052 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-05 15:35:57.065  INFO 5052 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:35:57.363  INFO 5052 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2b5a4d44-8fee-4d8e-a267-f850e59dea13
+
+2020-09-05 15:35:57.427  INFO 5052 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@141e32ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@623f0955, org.springframework.security.web.header.HeaderWriterFilter@59f4a6f7, org.springframework.security.web.csrf.CsrfFilter@2a4910e4, org.springframework.security.web.authentication.logout.LogoutFilter@6e0f98bd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44a55bca, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@295ed4ed, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4c716245, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2a280bc4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ad146ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@366e824c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@266d3624, org.springframework.security.web.session.SessionManagementFilter@13f783, org.springframework.security.web.access.ExceptionTranslationFilter@426d5578, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@717aeffe]
+2020-09-05 15:35:57.625  INFO 5052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-05 15:35:57.666  INFO 5052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-05 15:35:57.690  INFO 5052 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-05 15:35:57.850  INFO 5052 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-05 15:35:57.869  INFO 5052 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-05 15:35:57.879  INFO 5052 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-09-05 15:35:57.880  INFO 5052 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 6.806 seconds (JVM running for 110.47)
+2020-09-05 15:35:57.896  INFO 5052 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) found bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$DefaultConfigurerAdapter'; @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-09-05 15:35:59.500 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:35:59.501 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{}]
+2020-09-05 15:35:59.502 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:35:59.509 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:35:59.510 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{employee=com.michal.pma.entities.Employee@503f8baf}]
+2020-09-05 15:35:59.510 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:36:09.855 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:36:09.856 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{}]
+2020-09-05 15:36:09.856 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:36:09.857 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:36:09.857 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{employee=com.michal.pma.entities.Employee@7fa8859e}]
+2020-09-05 15:36:09.858 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:36:11.013 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:36:11.014 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{}]
+2020-09-05 15:36:11.014 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:36:11.030 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:36:11.031 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{employees=[com.michal.pma.entities.Employee@2d0e8020, com.michal.pma.entities.Employee@17c24603, com.michal.pma.entities.Employee@6a351956]}]
+2020-09-05 15:36:11.031 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:36:12.256 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:36:12.257 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{}]
+2020-09-05 15:36:12.257 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:36:12.258 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:36:12.258 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{employee=com.michal.pma.entities.Employee@58fd3e8c}]
+2020-09-05 15:36:12.258 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:37:38.742 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:37:38.743 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{}]
+2020-09-05 15:37:38.743 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:37:38.744 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:37:38.745 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{employee=com.michal.pma.entities.Employee@55bedc6d}]
+2020-09-05 15:37:38.745 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:38:45.579 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:38:45.580 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:38:45.580 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:38:45.626 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:38:45.626 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@56ba37e4, com.michal.pma.entities.Project@273933d9, com.michal.pma.entities.Project@635ca104], projectStatus=[{"count":1,"stage":"INPROGRESS"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7b47680d, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4e30075f, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@ef70994]}]
+2020-09-05 15:38:45.627 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:38:47.148 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:38:47.149 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{}]
+2020-09-05 15:38:47.150 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:38:47.163 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:38:47.163 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{projects=[com.michal.pma.entities.Project@204e1d8d, com.michal.pma.entities.Project@65132856, com.michal.pma.entities.Project@70e2310c]}]
+2020-09-05 15:38:47.163 DEBUG 5052 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:38:48.539 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:38:48.539 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjectForm () with arguments [s] = [{}]
+2020-09-05 15:38:48.539 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:38:48.546 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:38:48.546 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjectForm () with arguments [s] = [{allEmployees=[com.michal.pma.entities.Employee@7fcfb98b, com.michal.pma.entities.Employee@81c541e, com.michal.pma.entities.Employee@69dc3d4d], project=com.michal.pma.entities.Project@3ad55308}]
+2020-09-05 15:38:48.547 DEBUG 5052 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:39:35.524 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:39:35.525 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.createProject () with arguments [s] = [com.michal.pma.entities.Project@39e11fc, {project=com.michal.pma.entities.Project@39e11fc, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-09-05 15:39:35.525 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:39:35.607 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:39:35.608 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.createProject () with arguments [s] = [com.michal.pma.entities.Project@39e11fc, {project=com.michal.pma.entities.Project@39e11fc, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-09-05 15:39:35.608 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:39:35.623 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:39:35.623 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{}]
+2020-09-05 15:39:35.623 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:39:35.627 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:39:35.627 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{projects=[com.michal.pma.entities.Project@3e14b23e, com.michal.pma.entities.Project@7f4f8005, com.michal.pma.entities.Project@56d8ae8c, com.michal.pma.entities.Project@3299798d]}]
+2020-09-05 15:39:35.627 DEBUG 5052 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:39:40.525 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:39:40.526 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{}]
+2020-09-05 15:39:40.526 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:39:40.531 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:39:40.531 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{employees=[com.michal.pma.entities.Employee@2f72525, com.michal.pma.entities.Employee@dbf71df, com.michal.pma.entities.Employee@5ee79ce2]}]
+2020-09-05 15:39:40.531 DEBUG 5052 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:39:43.887 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:39:43.888 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{}]
+2020-09-05 15:39:43.888 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:39:43.888 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:39:43.888 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{employee=com.michal.pma.entities.Employee@780d6aa3}]
+2020-09-05 15:39:43.889 DEBUG 5052 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:39:59.989 DEBUG 5052 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:39:59.989 DEBUG 5052 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.createEmployee () with arguments [s] = [com.michal.pma.entities.Employee@306db83c, {employee=com.michal.pma.entities.Employee@306db83c, org.springframework.validation.BindingResult.employee=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-09-05 15:39:59.990 DEBUG 5052 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:40:00.003 DEBUG 5052 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:40:00.003 DEBUG 5052 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.createEmployee () with arguments [s] = [com.michal.pma.entities.Employee@306db83c, {employee=com.michal.pma.entities.Employee@306db83c, org.springframework.validation.BindingResult.employee=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-09-05 15:40:00.004 DEBUG 5052 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:40:00.018 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:40:00.018 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{}]
+2020-09-05 15:40:00.019 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:40:00.023 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:40:00.024 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{employees=[com.michal.pma.entities.Employee@68cd9413, com.michal.pma.entities.Employee@288ab736, com.michal.pma.entities.Employee@44b793c3, com.michal.pma.entities.Employee@6fe5d684]}]
+2020-09-05 15:40:00.024 DEBUG 5052 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:40:03.230 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:40:03.230 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:40:03.230 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:40:03.242 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:40:03.242 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@5e0b9588, com.michal.pma.entities.Project@14e165d8, com.michal.pma.entities.Project@65ba8842, com.michal.pma.entities.Project@19e56546], projectStatus=[{"count":2,"stage":"INPROGRESS"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@291ccd8a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5c8a8b2d, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4b3620a6, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@760e3e4f]}]
+2020-09-05 15:40:03.242 DEBUG 5052 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:42:26.595  INFO 6556 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 6556 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-05 15:42:26.608 DEBUG 6556 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-05 15:42:26.609  INFO 6556 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-05 15:42:26.762  INFO 6556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-05 15:42:26.764  INFO 6556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-05 15:42:29.274  INFO 6556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-05 15:42:29.505  INFO 6556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 193ms. Found 3 JPA repository interfaces.
+2020-09-05 15:42:31.199  INFO 6556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-05 15:42:31.712  INFO 6556 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4942 ms
+2020-09-05 15:42:33.600  INFO 6556 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-05 15:42:33.809  INFO 6556 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:42:34.105  WARN 6556 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-05 15:42:34.428  INFO 6556 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a9a6240, org.springframework.security.web.context.SecurityContextPersistenceFilter@64a47f34, org.springframework.security.web.header.HeaderWriterFilter@388ae971, org.springframework.security.web.csrf.CsrfFilter@7e651ad0, org.springframework.security.web.authentication.logout.LogoutFilter@3919fd31, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@23a4e9fe, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3bf742ca, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@177884e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b192380, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12d7bfa2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3af90ee0, org.springframework.security.web.session.SessionManagementFilter@4df26c3, org.springframework.security.web.access.ExceptionTranslationFilter@279c75a5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68a48aba]
+2020-09-05 15:42:35.084  INFO 6556 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-05 15:42:35.147  INFO 6556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-05 15:42:35.152  INFO 6556 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-05 15:42:35.710  INFO 6556 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:42:36.137  INFO 6556 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-05 15:42:36.153  INFO 6556 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 11.173 seconds (JVM running for 17.516)
+2020-09-05 15:42:41.388  INFO 6556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-05 15:42:41.402  INFO 6556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-09-05 15:42:41.487 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:42:41.490 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:42:41.491 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:42:42.346 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:42:42.347 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@6bf90ba3, com.michal.pma.entities.Project@769116b1, com.michal.pma.entities.Project@448a7913, com.michal.pma.entities.Project@5c70eb9a], projectStatus=[{"stage":"INPROGRESS","count":2},{"stage":"NOTSTARTED","count":2}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@69e991ea, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1d54f69a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@47c0ed29, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@620352fa]}]
+2020-09-05 15:42:42.348 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:42:48.544 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:42:48.545 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{}]
+2020-09-05 15:42:48.545 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:42:48.563 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:42:48.564 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{employees=[com.michal.pma.entities.Employee@1bbcdd22, com.michal.pma.entities.Employee@26aad795, com.michal.pma.entities.Employee@3f6dd46d, com.michal.pma.entities.Employee@1c4ca375]}]
+2020-09-05 15:42:48.566 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:42:54.882 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:42:54.882 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{}]
+2020-09-05 15:42:54.882 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:42:54.883 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:42:54.883 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{employee=com.michal.pma.entities.Employee@26b9bee8}]
+2020-09-05 15:42:54.883 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:43:45.600 DEBUG 6556 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:43:45.601 DEBUG 6556 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.createEmployee () with arguments [s] = [com.michal.pma.entities.Employee@7906b8e9, {employee=com.michal.pma.entities.Employee@7906b8e9, org.springframework.validation.BindingResult.employee=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-09-05 15:43:45.601 DEBUG 6556 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:43:45.656 DEBUG 6556 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:43:45.656 DEBUG 6556 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.createEmployee () with arguments [s] = [com.michal.pma.entities.Employee@7906b8e9, {employee=com.michal.pma.entities.Employee@7906b8e9, org.springframework.validation.BindingResult.employee=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-09-05 15:43:45.657 DEBUG 6556 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:43:45.669 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:43:45.669 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{}]
+2020-09-05 15:43:45.669 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:43:45.672 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:43:45.672 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{employees=[com.michal.pma.entities.Employee@bd5b9d9, com.michal.pma.entities.Employee@16983fc3, com.michal.pma.entities.Employee@23767509, com.michal.pma.entities.Employee@146b5f30, com.michal.pma.entities.Employee@32d62715]}]
+2020-09-05 15:43:45.672 DEBUG 6556 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:43:47.892 DEBUG 6556 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:43:47.893 DEBUG 6556 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{}]
+2020-09-05 15:43:47.893 DEBUG 6556 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:43:47.901 DEBUG 6556 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:43:47.901 DEBUG 6556 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{projects=[com.michal.pma.entities.Project@576d36e4, com.michal.pma.entities.Project@5832ad8c, com.michal.pma.entities.Project@33fab590, com.michal.pma.entities.Project@61494051]}]
+2020-09-05 15:43:47.901 DEBUG 6556 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:43:51.811 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:43:51.812 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{}]
+2020-09-05 15:43:51.812 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:43:51.816 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:43:51.817 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{projects=[com.michal.pma.entities.Project@3b1f97e7, com.michal.pma.entities.Project@6f711495, com.michal.pma.entities.Project@4456e890, com.michal.pma.entities.Project@d3c1664]}]
+2020-09-05 15:43:51.817 DEBUG 6556 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:52:35.604  INFO 6556 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:52:35.641  INFO 6556 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:52:37.712  INFO 6556 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 6556 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-05 15:52:37.713 DEBUG 6556 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-05 15:52:37.713  INFO 6556 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-05 15:52:38.772  INFO 6556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-05 15:52:38.848  INFO 6556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75ms. Found 3 JPA repository interfaces.
+2020-09-05 15:52:40.212  INFO 6556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-05 15:52:40.820  INFO 6556 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3093 ms
+2020-09-05 15:52:43.634  INFO 6556 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-05 15:52:43.766  INFO 6556 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:52:44.040  WARN 6556 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-05 15:52:44.280  INFO 6556 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:52:44.885  INFO 6556 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: db393e5d-af3b-4151-91ef-a34ee4da02e5
+
+2020-09-05 15:52:44.960  INFO 6556 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7768ffb1, org.springframework.security.web.context.SecurityContextPersistenceFilter@62d1b499, org.springframework.security.web.header.HeaderWriterFilter@65b20838, org.springframework.security.web.csrf.CsrfFilter@33923197, org.springframework.security.web.authentication.logout.LogoutFilter@275865, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5dec6ab2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@23556af3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@12093d81, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@643abff4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f4b0552, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a4d214b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23fdf52b, org.springframework.security.web.session.SessionManagementFilter@406d2b8a, org.springframework.security.web.access.ExceptionTranslationFilter@a12f2bb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4fc620ab]
+2020-09-05 15:52:45.154  INFO 6556 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-05 15:52:45.191  INFO 6556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-05 15:52:45.237  INFO 6556 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-05 15:52:45.480  INFO 6556 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-05 15:52:45.529  INFO 6556 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 8.109 seconds (JVM running for 626.883)
+2020-09-05 15:52:45.546  INFO 6556 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) found bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$DefaultConfigurerAdapter'; @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-09-05 15:53:10.773  INFO 6556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-05 15:53:10.780  INFO 6556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-09-05 15:53:44.261  INFO 10440 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 10440 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-05 15:53:44.276 DEBUG 10440 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-05 15:53:44.276  INFO 10440 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-05 15:53:44.395  INFO 10440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-05 15:53:44.395  INFO 10440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-05 15:53:46.112  INFO 10440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-05 15:53:46.285  INFO 10440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146ms. Found 3 JPA repository interfaces.
+2020-09-05 15:53:48.254  INFO 10440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-05 15:53:48.985  INFO 10440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4590 ms
+2020-09-05 15:53:52.732  INFO 10440 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-05 15:53:52.985  INFO 10440 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-05 15:53:53.345  WARN 10440 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-05 15:53:53.716  INFO 10440 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51ce8ee0, org.springframework.security.web.context.SecurityContextPersistenceFilter@131ce53c, org.springframework.security.web.header.HeaderWriterFilter@4fce3c8c, org.springframework.security.web.csrf.CsrfFilter@4433b1bd, org.springframework.security.web.authentication.logout.LogoutFilter@618b43cd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29d39c47, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3c70c176, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4ecd0e7f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@170cee5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47a71c28, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6092d396, org.springframework.security.web.session.SessionManagementFilter@6ae9af46, org.springframework.security.web.access.ExceptionTranslationFilter@4a41b9cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2866feae]
+2020-09-05 15:53:54.406  INFO 10440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-05 15:53:54.475  INFO 10440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-05 15:53:54.480  INFO 10440 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-05 15:53:55.082  INFO 10440 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-05 15:53:55.494  INFO 10440 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-05 15:53:55.507  INFO 10440 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 12.167 seconds (JVM running for 19.435)
+2020-09-05 15:54:25.782  INFO 10440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-05 15:54:25.798  INFO 10440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-05 15:54:25.870 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:25.873 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:54:25.873 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:26.403 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:26.404 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@48cc1449, com.michal.pma.entities.Project@39e63b8b, com.michal.pma.entities.Project@17169663, com.michal.pma.entities.Project@e80d995], projectStatus=[{"count":2,"stage":"INPROGRESS"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2b568bed, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@45f551ef, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1dbd3e98, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7aa544c0, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@65b3a19a]}]
+2020-09-05 15:54:26.405 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:29.543 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:29.544 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{}]
+2020-09-05 15:54:29.544 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:29.560 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:29.560 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{employees=[com.michal.pma.entities.Employee@7a59a3b5, com.michal.pma.entities.Employee@56f1b6e1, com.michal.pma.entities.Employee@3e64f36, com.michal.pma.entities.Employee@5d1dcf69, com.michal.pma.entities.Employee@6aee9b74]}]
+2020-09-05 15:54:29.560 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:34.541 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:34.541 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{}]
+2020-09-05 15:54:34.541 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:34.541 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:34.542 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{employee=com.michal.pma.entities.Employee@6e363b88}]
+2020-09-05 15:54:34.542 DEBUG 10440 --- [http-nio-8080-exec-1] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:35.800 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:35.801 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{}]
+2020-09-05 15:54:35.801 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:35.808 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:35.808 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{projects=[com.michal.pma.entities.Project@66169f8, com.michal.pma.entities.Project@8921bd9, com.michal.pma.entities.Project@65794e8f, com.michal.pma.entities.Project@4a5e89c4]}]
+2020-09-05 15:54:35.808 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:36.489 DEBUG 10440 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:36.489 DEBUG 10440 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjectForm () with arguments [s] = [{}]
+2020-09-05 15:54:36.489 DEBUG 10440 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:36.495 DEBUG 10440 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:36.495 DEBUG 10440 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjectForm () with arguments [s] = [{allEmployees=[com.michal.pma.entities.Employee@470f5235, com.michal.pma.entities.Employee@7bc1089f, com.michal.pma.entities.Employee@161c9f36, com.michal.pma.entities.Employee@2e10a586, com.michal.pma.entities.Employee@1333d48b], project=com.michal.pma.entities.Project@7834b288}]
+2020-09-05 15:54:36.495 DEBUG 10440 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:39.636 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:39.637 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:54:39.637 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:39.651 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:39.651 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@3bf13401, com.michal.pma.entities.Project@6e713738, com.michal.pma.entities.Project@438e363d, com.michal.pma.entities.Project@3fcb94e2], projectStatus=[{"count":2,"stage":"INPROGRESS"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@57750388, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@14c6c719, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5d6c211b, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1446bf7a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6b509739]}]
+2020-09-05 15:54:39.651 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:43.176 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:43.177 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{}]
+2020-09-05 15:54:43.177 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:43.184 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:43.185 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{projects=[com.michal.pma.entities.Project@47d4e747, com.michal.pma.entities.Project@568eea3d, com.michal.pma.entities.Project@12c771a2, com.michal.pma.entities.Project@72494262]}]
+2020-09-05 15:54:43.185 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:44.052 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:44.053 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjectForm () with arguments [s] = [{}]
+2020-09-05 15:54:44.053 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:54:44.059 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:54:44.059 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjectForm () with arguments [s] = [{allEmployees=[com.michal.pma.entities.Employee@3d452126, com.michal.pma.entities.Employee@313820bd, com.michal.pma.entities.Employee@555768de, com.michal.pma.entities.Employee@1b698ac9, com.michal.pma.entities.Employee@7ffc2000], project=com.michal.pma.entities.Project@499ceb54}]
+2020-09-05 15:54:44.060 DEBUG 10440 --- [http-nio-8080-exec-4] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:55:16.529 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:55:16.529 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.createProject () with arguments [s] = [com.michal.pma.entities.Project@47475629, {project=com.michal.pma.entities.Project@47475629, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-09-05 15:55:16.529 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:55:16.595 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:55:16.595 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.createProject () with arguments [s] = [com.michal.pma.entities.Project@47475629, {project=com.michal.pma.entities.Project@47475629, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-09-05 15:55:16.595 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:55:16.611 DEBUG 10440 --- [http-nio-8080-exec-10] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:55:16.611 DEBUG 10440 --- [http-nio-8080-exec-10] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{}]
+2020-09-05 15:55:16.611 DEBUG 10440 --- [http-nio-8080-exec-10] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:55:16.615 DEBUG 10440 --- [http-nio-8080-exec-10] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:55:16.615 DEBUG 10440 --- [http-nio-8080-exec-10] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.ProjectController.displayProjects () with arguments [s] = [{projects=[com.michal.pma.entities.Project@d8c8be0, com.michal.pma.entities.Project@6f36d78d, com.michal.pma.entities.Project@2b833ce0, com.michal.pma.entities.Project@13549cf6, com.michal.pma.entities.Project@7a6ed6f7]}]
+2020-09-05 15:55:16.616 DEBUG 10440 --- [http-nio-8080-exec-10] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:55:18.168 DEBUG 10440 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:55:18.169 DEBUG 10440 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:55:18.170 DEBUG 10440 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:55:18.182 DEBUG 10440 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:55:18.182 DEBUG 10440 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@6be3d740, com.michal.pma.entities.Project@53eca27c, com.michal.pma.entities.Project@4446aab3, com.michal.pma.entities.Project@7f7b3551, com.michal.pma.entities.Project@a57b429], projectStatus=[{"count":2,"stage":"INPROGRESS"},{"count":1,"stage":"COMPLETED"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3a45f87a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@982729a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@a16207f, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@52fae32c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@47695721]}]
+2020-09-05 15:55:18.183 DEBUG 10440 --- [http-nio-8080-exec-9] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:55:33.036 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:55:33.037 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{}]
+2020-09-05 15:55:33.037 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:55:33.042 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:55:33.042 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{employees=[com.michal.pma.entities.Employee@1c29d617, com.michal.pma.entities.Employee@1c27131c, com.michal.pma.entities.Employee@28cc6d57, com.michal.pma.entities.Employee@2b4202fc, com.michal.pma.entities.Employee@7989f0ed]}]
+2020-09-05 15:55:33.042 DEBUG 10440 --- [http-nio-8080-exec-7] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:55:33.763 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:55:33.763 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{}]
+2020-09-05 15:55:33.763 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:55:33.764 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:55:33.764 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployeeForm () with arguments [s] = [{employee=com.michal.pma.entities.Employee@47bbcb85}]
+2020-09-05 15:55:33.765 DEBUG 10440 --- [http-nio-8080-exec-8] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:56:19.899 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:56:19.900 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.createEmployee () with arguments [s] = [com.michal.pma.entities.Employee@26df23b, {employee=com.michal.pma.entities.Employee@26df23b, org.springframework.validation.BindingResult.employee=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-09-05 15:56:19.900 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:56:19.916 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:56:19.916 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.createEmployee () with arguments [s] = [com.michal.pma.entities.Employee@26df23b, {employee=com.michal.pma.entities.Employee@26df23b, org.springframework.validation.BindingResult.employee=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2020-09-05 15:56:19.916 DEBUG 10440 --- [http-nio-8080-exec-3] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:56:19.930 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:56:19.930 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{}]
+2020-09-05 15:56:19.930 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:56:19.934 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:56:19.934 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.EmployeeController.displayEmployees () with arguments [s] = [{employees=[com.michal.pma.entities.Employee@ec7590c, com.michal.pma.entities.Employee@5f4e0434, com.michal.pma.entities.Employee@5e63c4fb, com.michal.pma.entities.Employee@28a20c95, com.michal.pma.entities.Employee@1c993fb4, com.michal.pma.entities.Employee@33d9f7b7]}]
+2020-09-05 15:56:19.934 DEBUG 10440 --- [http-nio-8080-exec-2] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:56:21.623 DEBUG 10440 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:56:21.624 DEBUG 10440 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{}]
+2020-09-05 15:56:21.624 DEBUG 10440 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-05 15:56:21.638 DEBUG 10440 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-05 15:56:21.638 DEBUG 10440 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.HomeController.displayHome () with arguments [s] = [{versionNumber=dev, projects=[com.michal.pma.entities.Project@2552fe38, com.michal.pma.entities.Project@738a19a7, com.michal.pma.entities.Project@38c9a748, com.michal.pma.entities.Project@6a97974, com.michal.pma.entities.Project@3438e4a7], projectStatus=[{"count":2,"stage":"INPROGRESS"},{"count":1,"stage":"COMPLETED"},{"count":2,"stage":"NOTSTARTED"}], employeesProjectCount=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@79bed560, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@181d9684, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3eca6d66, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6643b88e, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@69d964f3, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1d8476fa]}]
+2020-09-05 15:56:21.638 DEBUG 10440 --- [http-nio-8080-exec-6] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+

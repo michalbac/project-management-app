@@ -34,3 +34,8 @@ build/
 
 ### DockerFiles ###
 **/Dockerfile
+
+## Log files ##
+**/app.log
+**/app.log**
+*.log
