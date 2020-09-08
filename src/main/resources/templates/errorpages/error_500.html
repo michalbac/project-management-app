@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layouts :: header"></head>
+<style>
+    h2 {text-align: center;}
+    h4 {text-align: center;}
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+</style>
+<body>
+<nav th:replace="layouts :: navbar"></nav>
+<div class="container">
+    <br>
+    <h2>Gateway error</h2>
+    <h2> Please contact administrator</h2>
+    <h4> Error code: 500</h4>
+    <div class="center">
+        <a th:href="@{/}"  class="btn btn-primary btn-sm mb-3">Return to the home page</a>
+    </div>
+</div>
