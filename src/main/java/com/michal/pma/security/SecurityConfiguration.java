@@ -41,5 +41,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/employees/create").hasRole("ADMIN")
                 .antMatchers("/", "/**").permitAll()
                 .and().formLogin();
+
+        http.csrf().disable();
     }
 }
