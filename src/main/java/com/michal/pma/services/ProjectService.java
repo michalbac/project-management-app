@@ -29,4 +29,12 @@ public class ProjectService {
         return projectRepository.getProjectsStatus();
     }
 
+    public Project getProjectById(long id){
+        return projectRepository.findById(id).get();
+    }
+
+    public void deleteById(long id){
+        projectRepository.deleteById(id);
+    }
+
 }

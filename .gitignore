@@ -39,3 +39,4 @@ build/
 **/app.log
 **/app.log**
 *.log
+*.gz
