@@ -1,1 +1,811 @@
-2020-09-21 08:34:54.646  WARN 19168 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h14m19s551ms47µs800ns).
+2020-09-22 18:18:48.942  INFO 21428 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 21428 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 18:18:48.964 DEBUG 21428 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 18:18:48.965  INFO 21428 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 18:18:49.159  INFO 21428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-22 18:18:49.162  INFO 21428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-22 18:18:52.318  INFO 21428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 18:18:52.559  INFO 21428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 216ms. Found 3 JPA repository interfaces.
+2020-09-22 18:18:55.958  INFO 21428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 18:18:56.739  INFO 21428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7576 ms
+2020-09-22 18:19:01.968  INFO 21428 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 18:19:02.510  INFO 21428 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 18:19:03.157  WARN 21428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 18:19:03.862  INFO 21428 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ff20029, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e108dcf, org.springframework.security.web.header.HeaderWriterFilter@7b4f0fc4, org.springframework.security.web.authentication.logout.LogoutFilter@28f946f0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35425589, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@354d1773, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@83606d0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4af1d4a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30899f42, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55597d48, org.springframework.security.web.session.SessionManagementFilter@572278dd, org.springframework.security.web.access.ExceptionTranslationFilter@3cc732b0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14f4ae3d]
+2020-09-22 18:19:05.415  INFO 21428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 18:19:05.611  INFO 21428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 18:19:05.637  INFO 21428 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 18:19:06.474  INFO 21428 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 18:19:06.761  INFO 21428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-22 18:19:06.973  INFO 21428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 211 ms
+2020-09-22 18:19:07.465  INFO 21428 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 18:19:07.500  INFO 21428 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 20.196 seconds (JVM running for 28.144)
+2020-09-22 18:19:08.898 DEBUG 21428 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-22 18:19:08.905 DEBUG 21428 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : ********** Before Method Execution ********** 
+ com.michal.pma.controllers.AppErrorController.handleError () with arguments [s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@77a04a8b]]
+2020-09-22 18:19:08.923 DEBUG 21428 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-22 18:19:08.938 DEBUG 21428 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+ 
+2020-09-22 18:19:08.939 DEBUG 21428 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : ********** After Method Execution ********** 
+ com.michal.pma.controllers.AppErrorController.handleError () with arguments [s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@77a04a8b]]
+2020-09-22 18:19:08.939 DEBUG 21428 --- [http-nio-8080-exec-5] c.m.pma.logging.ApplicationLoggerAspect  : _____________________________________________ 
+ 
+ 
+
+2020-09-22 18:54:49.613  INFO 21428 --- [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 18:54:49.624  INFO 21428 --- [Thread-42] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 18:54:50.171  INFO 21428 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 21428 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 18:54:50.171 DEBUG 21428 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 18:54:50.171  INFO 21428 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 18:54:50.791  INFO 21428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 18:54:50.846  INFO 21428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 3 JPA repository interfaces.
+2020-09-22 18:54:51.849  INFO 21428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 18:54:52.346  INFO 21428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2161 ms
+2020-09-22 18:54:54.745  INFO 21428 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 18:54:54.810  INFO 21428 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 18:54:54.971  WARN 21428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 18:54:55.071  INFO 21428 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e61df23, org.springframework.security.web.context.SecurityContextPersistenceFilter@19598e38, org.springframework.security.web.header.HeaderWriterFilter@50ad4570, org.springframework.security.web.authentication.logout.LogoutFilter@1b809919, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30bc506e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7e1556ae, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7b29d50e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36c0c315, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cfc9678, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a1bd4ca, org.springframework.security.web.session.SessionManagementFilter@80f4293, org.springframework.security.web.access.ExceptionTranslationFilter@375887e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b5f4d8c]
+2020-09-22 18:54:55.075  INFO 21428 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 18:54:55.416  INFO 21428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 18:54:55.443  INFO 21428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 18:54:55.444  INFO 21428 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 18:54:55.538  INFO 21428 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 18:54:55.546  INFO 21428 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 5.467 seconds (JVM running for 2176.183)
+2020-09-22 18:54:55.552  INFO 21428 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 18:56:38.852  INFO 21428 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-22 18:56:38.862  INFO 21428 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-09-22 18:56:38.890  WARN 21428 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-09-22 18:58:03.335  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 16904 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 18:58:03.335 DEBUG 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 18:58:03.335  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 18:58:03.374  INFO 16904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-22 18:58:03.390  INFO 16904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-22 18:58:04.259  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 18:58:04.359  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89ms. Found 3 JPA repository interfaces.
+2020-09-22 18:58:05.582  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 18:58:06.155  INFO 16904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2764 ms
+2020-09-22 18:58:08.306  INFO 16904 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 18:58:08.549  INFO 16904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 18:58:08.865  WARN 16904 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 18:58:09.157  INFO 16904 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@730169c9, org.springframework.security.web.context.SecurityContextPersistenceFilter@50b10c5b, org.springframework.security.web.header.HeaderWriterFilter@28a0096d, org.springframework.security.web.authentication.logout.LogoutFilter@4cad3138, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ba0c0e4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@32f3e72d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6f0c8a00, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15d0c41c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7aa01467, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d266a68, org.springframework.security.web.session.SessionManagementFilter@4425d046, org.springframework.security.web.access.ExceptionTranslationFilter@1a75ddef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f2a2c6]
+2020-09-22 18:58:09.782  INFO 16904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 18:58:09.858  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 18:58:09.858  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 18:58:10.403  INFO 16904 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 18:58:10.822  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 18:58:10.865  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 7.961 seconds (JVM running for 11.692)
+2020-09-22 18:58:16.434  INFO 16904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-22 18:58:16.452  INFO 16904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-09-22 18:58:55.621  INFO 16904 --- [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 18:58:55.626  INFO 16904 --- [Thread-21] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 18:58:56.187  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 16904 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 18:58:56.188 DEBUG 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 18:58:56.189  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 18:58:57.040  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 18:58:57.113  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 3 JPA repository interfaces.
+2020-09-22 18:58:58.081  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 18:58:58.812  INFO 16904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2619 ms
+2020-09-22 18:59:02.283  INFO 16904 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 18:59:02.355  INFO 16904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 18:59:02.565  WARN 16904 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 18:59:02.656  INFO 16904 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 18:59:02.659  INFO 16904 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fc18508, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e0afb0f, org.springframework.security.web.header.HeaderWriterFilter@3d81b1c5, org.springframework.security.web.authentication.logout.LogoutFilter@378c21fe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@450ae04a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@455e72ca, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c1e9757, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@147de1f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24c26521, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45f9720c, org.springframework.security.web.session.SessionManagementFilter@29c9069d, org.springframework.security.web.access.ExceptionTranslationFilter@3d92c90, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63f946ee]
+2020-09-22 18:59:03.040  INFO 16904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 18:59:03.073  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 18:59:03.075  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 18:59:03.182  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 18:59:03.190  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 7.083 seconds (JVM running for 64.018)
+2020-09-22 18:59:03.193  INFO 16904 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 19:01:44.791  INFO 16904 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:01:44.795  INFO 16904 --- [Thread-30] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:01:45.401  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 16904 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:01:45.403 DEBUG 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:01:45.403  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:01:45.977  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:01:46.030  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 3 JPA repository interfaces.
+2020-09-22 19:01:47.096  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:01:47.815  INFO 16904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2402 ms
+2020-09-22 19:01:50.218  INFO 16904 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:01:50.283  INFO 16904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:01:50.499  WARN 16904 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:01:50.573  INFO 16904 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:01:50.615  INFO 16904 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ce0fa22, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a0a5820, org.springframework.security.web.header.HeaderWriterFilter@142a8579, org.springframework.security.web.authentication.logout.LogoutFilter@337851a2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68725919, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6f6ffba2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6803c12d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@302e058, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43c3ac0c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@196dd7ae, org.springframework.security.web.session.SessionManagementFilter@483c8799, org.springframework.security.web.access.ExceptionTranslationFilter@10812203, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8ff2c17]
+2020-09-22 19:01:51.150  INFO 16904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:01:51.188  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:01:51.190  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:01:51.339  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:01:51.348  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 6.122 seconds (JVM running for 232.175)
+2020-09-22 19:01:51.354  INFO 16904 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 19:02:02.165  INFO 16904 --- [Thread-36] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:02:02.167  INFO 16904 --- [Thread-36] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:02:04.256  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 16904 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:02:04.258 DEBUG 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:02:04.258  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:02:04.754  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:02:04.817  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 3 JPA repository interfaces.
+2020-09-22 19:02:06.045  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:02:06.599  INFO 16904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2336 ms
+2020-09-22 19:02:08.624  INFO 16904 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:02:08.700  INFO 16904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:02:08.890  WARN 16904 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:02:08.967  INFO 16904 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:02:08.993  INFO 16904 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c0b2692, org.springframework.security.web.context.SecurityContextPersistenceFilter@f7fa6a1, org.springframework.security.web.header.HeaderWriterFilter@a656229, org.springframework.security.web.authentication.logout.LogoutFilter@a64f7f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@770c0eff, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6ccfcc2b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7acab628, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@697ee63a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@482bb516, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4dc437c5, org.springframework.security.web.session.SessionManagementFilter@344f088, org.springframework.security.web.access.ExceptionTranslationFilter@4bd5b652, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a45bf93]
+2020-09-22 19:02:09.455  INFO 16904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:02:09.487  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:02:09.489  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:02:09.602  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:02:09.609  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 5.44 seconds (JVM running for 250.437)
+2020-09-22 19:02:09.614  INFO 16904 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 19:03:43.126  INFO 16904 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-22 19:03:43.142  INFO 16904 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-22 19:11:59.287  INFO 16904 --- [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:11:59.287  INFO 16904 --- [Thread-42] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:11:59.793  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 16904 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:11:59.794 DEBUG 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:11:59.794  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:12:00.376  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:12:00.419  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 3 JPA repository interfaces.
+2020-09-22 19:12:01.326  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:12:01.864  INFO 16904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2064 ms
+2020-09-22 19:12:03.940  INFO 16904 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:12:03.978  INFO 16904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:12:04.112  WARN 16904 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:12:04.198  INFO 16904 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53280305, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d9db8f3, org.springframework.security.web.header.HeaderWriterFilter@42f86bd1, org.springframework.security.web.authentication.logout.LogoutFilter@12350b1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d5bc851, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@14469d3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6bcca377, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a8b56c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bac10a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4eeb1e1c, org.springframework.security.web.session.SessionManagementFilter@cf2d019, org.springframework.security.web.access.ExceptionTranslationFilter@af7aade, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3893a230]
+2020-09-22 19:12:04.202  INFO 16904 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:12:04.527  INFO 16904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:12:04.552  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:12:04.553  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:12:04.620  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:12:04.631  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 4.934 seconds (JVM running for 845.456)
+2020-09-22 19:12:04.632  INFO 16904 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 19:13:18.444  INFO 16904 --- [Thread-48] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:13:18.445  INFO 16904 --- [Thread-48] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:13:18.840  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 16904 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:13:18.840 DEBUG 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:13:18.840  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:13:19.655  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:13:19.723  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67ms. Found 3 JPA repository interfaces.
+2020-09-22 19:13:21.194  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:13:21.641  INFO 16904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2795 ms
+2020-09-22 19:13:23.572  INFO 16904 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:13:23.636  INFO 16904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:13:23.797  WARN 16904 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:13:23.894  INFO 16904 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13d3ecf7, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b74fa0, org.springframework.security.web.header.HeaderWriterFilter@529335e8, org.springframework.security.web.authentication.logout.LogoutFilter@35094c5f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6b0a4a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@8d68ffc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3d8da388, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3726a1db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c51fea2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@640f5439, org.springframework.security.web.session.SessionManagementFilter@1edd55c9, org.springframework.security.web.access.ExceptionTranslationFilter@6c4bcd00, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a42732b]
+2020-09-22 19:13:23.897  INFO 16904 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:13:24.273  INFO 16904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:13:24.309  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:13:24.313  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:13:24.403  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:13:24.410  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 5.661 seconds (JVM running for 925.233)
+2020-09-22 19:13:24.413  INFO 16904 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 19:16:00.457  INFO 16904 --- [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:16:00.458  INFO 16904 --- [Thread-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:16:01.135  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 16904 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:16:01.135 DEBUG 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:16:01.135  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:16:01.982  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:16:02.058  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77ms. Found 3 JPA repository interfaces.
+2020-09-22 19:16:03.562  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:16:04.332  INFO 16904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3191 ms
+2020-09-22 19:16:06.528  INFO 16904 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:16:06.593  INFO 16904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:16:06.740  WARN 16904 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:16:06.844  INFO 16904 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@124178eb, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e41ecfd, org.springframework.security.web.header.HeaderWriterFilter@2525f4cd, org.springframework.security.web.authentication.logout.LogoutFilter@7ac6a151, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3df96be8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@721fdf52, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4ea4ee86, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@191c1d75, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13150107, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ccad890, org.springframework.security.web.session.SessionManagementFilter@58572790, org.springframework.security.web.access.ExceptionTranslationFilter@301af414, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39016ba1]
+2020-09-22 19:16:06.893  INFO 16904 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:16:07.300  INFO 16904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:16:07.337  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:16:07.340  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:16:07.444  INFO 16904 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:16:07.448  INFO 16904 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 6.474 seconds (JVM running for 1088.274)
+2020-09-22 19:16:07.455  INFO 16904 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 19:16:45.924  INFO 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 5300 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:16:45.931 DEBUG 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:16:45.932  INFO 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:16:46.038  INFO 5300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-22 19:16:46.038  INFO 5300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-22 19:16:47.431  INFO 5300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:16:47.573  INFO 5300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129ms. Found 3 JPA repository interfaces.
+2020-09-22 19:16:49.010  INFO 5300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:16:49.476  INFO 5300 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3438 ms
+2020-09-22 19:16:51.524  INFO 5300 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:16:51.771  INFO 5300 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:16:52.042  WARN 5300 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:16:52.345  INFO 5300 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b29b6bd, org.springframework.security.web.context.SecurityContextPersistenceFilter@50239c62, org.springframework.security.web.header.HeaderWriterFilter@3e2bc11e, org.springframework.security.web.authentication.logout.LogoutFilter@18a33d7a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19a87e96, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6bd31c9b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6a762850, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d40a3ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52a699e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3818a014, org.springframework.security.web.session.SessionManagementFilter@4d7052eb, org.springframework.security.web.access.ExceptionTranslationFilter@290dbd8d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24c8c339]
+2020-09-22 19:16:53.034  INFO 5300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:16:53.110  INFO 5300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:16:53.114  INFO 5300 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:16:53.724  INFO 5300 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:16:54.176  INFO 5300 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:16:54.193  INFO 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 9.186 seconds (JVM running for 13.303)
+2020-09-22 19:16:58.388  INFO 5300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-22 19:16:58.406  INFO 5300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-09-22 19:17:11.184 ERROR 5300 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.ValidationException: HV000028: Unexpected exception during isValid call.] with root cause
+
+javax.persistence.NonUniqueResultException: query did not return a unique result: 6
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:128) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1588) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:111) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:196) ~[spring-data-jpa-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:154) ~[spring-data-jpa-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:142) ~[spring-data-jpa-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor$QueryMethodInvoker.invoke(QueryExecutorMethodInterceptor.java:195) ~[spring-data-commons-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:152) ~[spring-data-commons-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130) ~[spring-data-commons-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:149) ~[spring-data-jpa-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at com.sun.proxy.$Proxy126.findByEmail(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at com.sun.proxy.$Proxy80.findByEmail(Unknown Source) ~[na:na]
+	at com.michal.pma.validation.UniqueValidator.isValid(UniqueValidator.java:18) ~[classes/:na]
+	at com.michal.pma.validation.UniqueValidator.isValid(UniqueValidator.java:10) ~[classes/:na]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateSingleConstraint(ConstraintTree.java:283) ~[hibernate-validator-5.1.1.Final.jar:5.1.1.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:133) ~[hibernate-validator-5.1.1.Final.jar:5.1.1.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:91) ~[hibernate-validator-5.1.1.Final.jar:5.1.1.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:84) ~[hibernate-validator-5.1.1.Final.jar:5.1.1.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraint(ValidatorImpl.java:525) ~[hibernate-validator-5.1.1.Final.jar:5.1.1.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:465) ~[hibernate-validator-5.1.1.Final.jar:5.1.1.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:429) ~[hibernate-validator-5.1.1.Final.jar:5.1.1.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:381) ~[hibernate-validator-5.1.1.Final.jar:5.1.1.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:184) ~[hibernate-validator-5.1.1.Final.jar:5.1.1.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:117) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:70) ~[spring-boot-autoconfigure-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:889) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:266) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:137) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:52) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:216) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2020-09-22 19:17:11.198  WARN 5300 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-09-22 19:17:46.531  INFO 5300 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:17:46.537  INFO 5300 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:17:47.065  INFO 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 5300 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:17:47.066 DEBUG 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:17:47.066  INFO 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:17:47.543  INFO 5300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:17:47.547  INFO 5300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 JPA repository interfaces.
+2020-09-22 19:17:48.639  INFO 5300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:17:49.141  INFO 5300 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2069 ms
+2020-09-22 19:17:51.361  INFO 5300 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:17:51.542  INFO 5300 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:17:51.821  WARN 5300 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:17:51.943  INFO 5300 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:17:52.509  INFO 5300 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ac9105cd-8c4b-45d2-a52e-56d5b001f892
+
+2020-09-22 19:17:52.633  INFO 5300 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@89bcf01, org.springframework.security.web.context.SecurityContextPersistenceFilter@2185048d, org.springframework.security.web.header.HeaderWriterFilter@5166db73, org.springframework.security.web.csrf.CsrfFilter@6120dcea, org.springframework.security.web.authentication.logout.LogoutFilter@1551b2e1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38957b64, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4c65956d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7ba08516, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@16fce71d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29aa22cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e70d9c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a955170, org.springframework.security.web.session.SessionManagementFilter@36c69a39, org.springframework.security.web.access.ExceptionTranslationFilter@4d48bde5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5bed9ff7]
+2020-09-22 19:17:52.936  INFO 5300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:17:52.970  INFO 5300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:17:52.981  INFO 5300 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:17:52.983  INFO 5300 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:17:53.000  INFO 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 6.044 seconds (JVM running for 72.109)
+2020-09-22 19:17:53.013  INFO 5300 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   SpringBootWebSecurityConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) found bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$DefaultConfigurerAdapter'; @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-09-22 19:17:55.718  INFO 5300 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:17:55.720  INFO 5300 --- [Thread-32] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:17:57.956  INFO 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 5300 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:17:57.956 DEBUG 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:17:57.956  INFO 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:17:58.882  INFO 5300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:17:58.933  INFO 5300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 3 JPA repository interfaces.
+2020-09-22 19:17:59.919  INFO 5300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:18:00.380  INFO 5300 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2418 ms
+2020-09-22 19:18:02.509  INFO 5300 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:18:02.566  INFO 5300 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:18:02.704  WARN 5300 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:18:02.797  INFO 5300 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2241f60b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2933454, org.springframework.security.web.header.HeaderWriterFilter@1c63c01a, org.springframework.security.web.authentication.logout.LogoutFilter@23115a6c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d5a0514, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4d751d4c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4257c8b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18ada2df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a4cc2c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2229a5ef, org.springframework.security.web.session.SessionManagementFilter@1bb98af7, org.springframework.security.web.access.ExceptionTranslationFilter@21f77a7b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4905236b]
+2020-09-22 19:18:02.824  INFO 5300 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:18:03.213  INFO 5300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:18:03.239  INFO 5300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:18:03.241  INFO 5300 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:18:03.369  INFO 5300 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:18:03.377  INFO 5300 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 5.487 seconds (JVM running for 82.487)
+2020-09-22 19:18:03.380  INFO 5300 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) found beans of type 'org.springframework.boot.web.servlet.error.ErrorController' appErrorController (OnBeanCondition)
+
+   SpringBootWebSecurityConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' securityConfiguration (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-09-22 19:21:15.553  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 21396 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:21:15.558 DEBUG 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:21:15.558  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:21:15.609  INFO 21396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-22 19:21:15.609  INFO 21396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-22 19:21:16.605  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:21:16.696  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89ms. Found 3 JPA repository interfaces.
+2020-09-22 19:21:17.926  INFO 21396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:21:18.429  INFO 21396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2820 ms
+2020-09-22 19:21:20.727  INFO 21396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:21:20.977  INFO 21396 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:21:21.268  WARN 21396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:21:21.699  INFO 21396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@90ff0b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f104ec3, org.springframework.security.web.header.HeaderWriterFilter@55909c76, org.springframework.security.web.authentication.logout.LogoutFilter@4106ee7e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7a7a68f9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@53f69cc4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@55021f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45134a28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12da4729, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6860436, org.springframework.security.web.session.SessionManagementFilter@54ee378, org.springframework.security.web.access.ExceptionTranslationFilter@59469ebb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55ef8b3f]
+2020-09-22 19:21:22.499  INFO 21396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:21:22.588  INFO 21396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:21:22.592  INFO 21396 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:21:23.218  INFO 21396 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:21:23.749  INFO 21396 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:21:23.768  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 8.802 seconds (JVM running for 13.084)
+2020-09-22 19:21:29.562  INFO 21396 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-22 19:21:29.578  INFO 21396 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-22 19:21:29.634  WARN 21396 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-09-22 19:21:29.646  WARN 21396 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-09-22 19:27:01.040  WARN 21396 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.michal.pma.entities.Employee com.michal.pma.api.controller.EmployeeApiController.create(com.michal.pma.entities.Employee): [Field error in object 'employee' on field 'email': rejected value [laaaaaanister11@gmail.com]; codes [UniqueValue.employee.email,UniqueValue.email,UniqueValue.java.lang.String,UniqueValue]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.email,email]; arguments []; default message [email]]; default message [Unique Constraint violated]] ]
+2020-09-22 19:27:01.042  WARN 21396 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-09-22 19:34:44.062  INFO 21396 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:34:44.070  INFO 21396 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:34:44.933  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 21396 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:34:44.934 DEBUG 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:34:44.934  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:34:45.713  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:34:45.778  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 3 JPA repository interfaces.
+2020-09-22 19:34:47.139  INFO 21396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:34:47.798  INFO 21396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2853 ms
+2020-09-22 19:34:50.371  INFO 21396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:34:50.457  INFO 21396 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:34:50.747  WARN 21396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:34:50.852  INFO 21396 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:34:50.873  INFO 21396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c4a3bcb, org.springframework.security.web.context.SecurityContextPersistenceFilter@69a51c85, org.springframework.security.web.header.HeaderWriterFilter@24737797, org.springframework.security.web.authentication.logout.LogoutFilter@530bfd1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@361a030c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6f5fea4d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5fdaa984, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3463f4e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b93f235, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a9bc18a, org.springframework.security.web.session.SessionManagementFilter@4fe569bb, org.springframework.security.web.access.ExceptionTranslationFilter@2dee1ebe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b99d7b2]
+2020-09-22 19:34:51.578  INFO 21396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:34:51.615  INFO 21396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:34:51.619  INFO 21396 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:34:51.793  INFO 21396 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:34:51.811  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 7.098 seconds (JVM running for 821.123)
+2020-09-22 19:34:51.816  INFO 21396 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 19:41:47.274  INFO 21396 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:41:47.276  INFO 21396 --- [Thread-32] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:41:47.773  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 21396 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:41:47.773 DEBUG 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:41:47.773  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:41:48.452  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:41:48.476  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 JPA repository interfaces.
+2020-09-22 19:41:49.577  INFO 21396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:41:50.120  INFO 21396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2340 ms
+2020-09-22 19:41:52.705  INFO 21396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:41:52.794  INFO 21396 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:41:52.888  WARN 21396 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectApiController': Unsatisfied dependency expressed through field 'projectService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectService' defined in file [C:\Users\michal.bac\Documents\Development\project-managment\target\classes\com\michal\pma\services\ProjectService.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.michal.pma.services.ProjectService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3a4f13a3]
+2020-09-22 19:41:52.888  INFO 21396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:41:53.186  INFO 21396 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:41:53.222  INFO 21396 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:41:55.418  INFO 21396 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-22 19:41:55.443 ERROR 21396 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectApiController': Unsatisfied dependency expressed through field 'projectService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectService' defined in file [C:\Users\michal.bac\Documents\Development\project-managment\target\classes\com\michal\pma\services\ProjectService.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.michal.pma.services.ProjectService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3a4f13a3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at com.michal.pma.ProjectManagmentApplication.main(ProjectManagmentApplication.java:11) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectService' defined in file [C:\Users\michal.bac\Documents\Development\project-managment\target\classes\com\michal\pma\services\ProjectService.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.michal.pma.services.ProjectService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3a4f13a3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.michal.pma.services.ProjectService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3a4f13a3]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 34 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/michal/pma/dao/ProjectRepository;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_181]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_181]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_181]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.michal.pma.dao.ProjectRepository
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_181]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_181]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_181]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_181]
+	... 44 common frames omitted
+
+2020-09-22 19:42:02.900  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 21396 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:42:02.901 DEBUG 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:42:02.901  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:42:03.406  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:42:03.428  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 JPA repository interfaces.
+2020-09-22 19:42:05.229  INFO 21396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:42:06.028  INFO 21396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3123 ms
+2020-09-22 19:42:09.819  INFO 21396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:42:10.015  INFO 21396 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:42:10.138  WARN 21396 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectApiController' defined in file [C:\Users\michal.bac\Documents\Development\project-managment\target\classes\com\michal\pma\api\controller\ProjectApiController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.michal.pma.api.controller.ProjectApiController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@54073de9]
+2020-09-22 19:42:10.150  INFO 21396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:42:10.322  WARN 21396 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2020-09-22 19:42:10.323  INFO 21396 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:42:12.361  INFO 21396 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-22 19:42:12.363 ERROR 21396 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectApiController' defined in file [C:\Users\michal.bac\Documents\Development\project-managment\target\classes\com\michal\pma\api\controller\ProjectApiController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.michal.pma.api.controller.ProjectApiController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@54073de9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at com.michal.pma.ProjectManagmentApplication.main(ProjectManagmentApplication.java:11) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.michal.pma.api.controller.ProjectApiController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@54073de9]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:428) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:409) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:336) ~[spring-orm-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/michal/pma/services/ProjectService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_181]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_181]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_181]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.michal.pma.services.ProjectService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_181]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_181]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_181]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_181]
+	... 31 common frames omitted
+
+2020-09-22 19:43:28.617  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 21396 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:43:28.618 DEBUG 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:43:28.618  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:43:29.340  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:43:29.359  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2020-09-22 19:43:30.601  INFO 21396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:43:31.273  INFO 21396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2650 ms
+2020-09-22 19:43:33.482  INFO 21396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:43:33.650  INFO 21396 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:43:33.817  WARN 21396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:43:33.973  INFO 21396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13ce9b02, org.springframework.security.web.context.SecurityContextPersistenceFilter@12e386e2, org.springframework.security.web.header.HeaderWriterFilter@4c0f07aa, org.springframework.security.web.authentication.logout.LogoutFilter@197e3258, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@338cce, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@42d67a74, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@18cc48b4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@470244af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@730439b2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38ceeb32, org.springframework.security.web.session.SessionManagementFilter@e97fe98, org.springframework.security.web.access.ExceptionTranslationFilter@6bd7cc75, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33726a1d]
+2020-09-22 19:43:33.977  INFO 21396 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:43:34.646  INFO 21396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:43:34.687  INFO 21396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:43:34.688  INFO 21396 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:43:34.689  INFO 21396 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:43:34.697  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 6.165 seconds (JVM running for 1344.006)
+2020-09-22 19:43:34.702  INFO 21396 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 19:43:37.316  INFO 21396 --- [Thread-38] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:43:37.316  INFO 21396 --- [Thread-38] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:43:38.850  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 21396 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:43:38.850 DEBUG 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:43:38.850  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:43:39.160  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:43:39.212  INFO 21396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 3 JPA repository interfaces.
+2020-09-22 19:43:39.838  INFO 21396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:43:40.251  INFO 21396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1401 ms
+2020-09-22 19:43:42.016  INFO 21396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:43:42.055  INFO 21396 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:43:42.140  WARN 21396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:43:42.207  INFO 21396 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:43:42.210  INFO 21396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c4a401, org.springframework.security.web.context.SecurityContextPersistenceFilter@752bc3e0, org.springframework.security.web.header.HeaderWriterFilter@6c535beb, org.springframework.security.web.authentication.logout.LogoutFilter@35dd191d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a93b661, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2896c974, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2927d611, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ea11869, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@485b8055, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68c86146, org.springframework.security.web.session.SessionManagementFilter@5e07c557, org.springframework.security.web.access.ExceptionTranslationFilter@49e04428, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e09e4ef]
+2020-09-22 19:43:42.443  INFO 21396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:43:42.471  INFO 21396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:43:42.472  INFO 21396 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:43:42.592  INFO 21396 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:43:42.617  INFO 21396 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 3.794 seconds (JVM running for 1351.926)
+2020-09-22 19:43:42.621  INFO 21396 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-22 19:43:50.858  INFO 21396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-22 19:43:50.866  INFO 21396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-09-22 19:53:47.189  INFO 18448 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 18448 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 19:53:47.194 DEBUG 18448 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 19:53:47.194  INFO 18448 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 19:53:47.300  INFO 18448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-22 19:53:47.302  INFO 18448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-22 19:53:48.978  INFO 18448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 19:53:49.092  INFO 18448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97ms. Found 3 JPA repository interfaces.
+2020-09-22 19:53:50.864  INFO 18448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 19:53:51.243  INFO 18448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3941 ms
+2020-09-22 19:53:53.572  INFO 18448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 19:53:53.931  INFO 18448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 19:53:54.275  WARN 18448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 19:53:55.920  INFO 18448 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 19:53:56.752  INFO 18448 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@728088cc, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d1458ec, org.springframework.security.web.header.HeaderWriterFilter@6e8f6509, org.springframework.security.web.authentication.logout.LogoutFilter@be0441b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@750272a9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6b9920a9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9419f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11663923, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3eecc7f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@80263f4, org.springframework.security.web.session.SessionManagementFilter@371f2c55, org.springframework.security.web.access.ExceptionTranslationFilter@43fceca5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7587e3d8]
+2020-09-22 19:53:57.866  INFO 18448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 19:53:57.939  INFO 18448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 19:53:57.949  INFO 18448 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 19:53:58.270  INFO 18448 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 19:53:58.287  INFO 18448 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 11.965 seconds (JVM running for 16.103)
+2020-09-22 20:03:13.032  INFO 18448 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 20:03:13.036  INFO 18448 --- [Thread-30] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 20:03:13.517  INFO 18448 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 18448 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 20:03:13.518 DEBUG 18448 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 20:03:13.518  INFO 18448 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 20:03:14.495  INFO 18448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 20:03:14.556  INFO 18448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 2 JPA repository interfaces.
+2020-09-22 20:03:15.913  INFO 18448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 20:03:16.497  INFO 18448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2970 ms
+2020-09-22 20:03:19.063  INFO 18448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 20:03:19.152  INFO 18448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 20:03:19.258  WARN 18448 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeApiController': Unsatisfied dependency expressed through field 'employeeRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.michal.pma.dao.EmployeeRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-09-22 20:03:19.259  INFO 18448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 20:03:19.478  INFO 18448 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 20:03:19.481  INFO 18448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-22 20:03:21.055  INFO 18448 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-22 20:03:21.298 ERROR 18448 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeRepository in com.michal.pma.api.controller.EmployeeApiController required a bean of type 'com.michal.pma.dao.EmployeeRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.michal.pma.dao.EmployeeRepository' in your configuration.
+
+2020-09-22 20:03:56.833  INFO 17800 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Starting ProjectManagmentApplication on PL2054956W2 with PID 17800 (C:\Users\michal.bac\Documents\Development\project-managment\target\classes started by Michal.Bac in C:\Users\michal.bac\Documents\Development\project-managment)
+2020-09-22 20:03:56.833 DEBUG 17800 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-09-22 20:03:56.833  INFO 17800 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : The following profiles are active: dev
+2020-09-22 20:03:56.909  INFO 17800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-22 20:03:56.909  INFO 17800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-22 20:03:58.308  INFO 17800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-22 20:03:58.432  INFO 17800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112ms. Found 3 JPA repository interfaces.
+2020-09-22 20:04:00.209  INFO 17800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 20:04:00.592  INFO 17800 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3683 ms
+2020-09-22 20:04:02.895  INFO 17800 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2020-09-22 20:04:03.235  INFO 17800 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 20:04:03.623  WARN 17800 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 20:04:05.275  INFO 17800 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 20:04:06.323  INFO 17800 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48c7bd2a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d17f188, org.springframework.security.web.header.HeaderWriterFilter@536c7c51, org.springframework.security.web.authentication.logout.LogoutFilter@89f4be3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@578531de, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@fbfe9c7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@12186625, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59b5c511, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e7ef090, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19f467b7, org.springframework.security.web.session.SessionManagementFilter@1c21c724, org.springframework.security.web.access.ExceptionTranslationFilter@2a6a74ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d9faa52]
+2020-09-22 20:04:07.472  INFO 17800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-22 20:04:07.549  INFO 17800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 20:04:07.549  INFO 17800 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-22 20:04:07.787  INFO 17800 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-22 20:04:07.809  INFO 17800 --- [restartedMain] c.m.pma.ProjectManagmentApplication      : Started ProjectManagmentApplication in 11.565 seconds (JVM running for 15.89)
+2020-09-22 20:04:15.079  INFO 17800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-22 20:04:15.133  INFO 17800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 53 ms

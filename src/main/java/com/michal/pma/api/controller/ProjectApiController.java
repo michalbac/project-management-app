@@ -43,9 +43,7 @@ public class ProjectApiController {
        if(project.getName() != null){
            projectTemp.setName(project.getName());
        }
-        if(project.getName() != null){
-            projectTemp.setName(project.getName());
-        }
+
         if(project.getDescription() != null){
             projectTemp.setDescription(project.getDescription());
         }

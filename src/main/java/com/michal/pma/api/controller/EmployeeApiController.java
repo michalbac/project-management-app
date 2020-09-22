@@ -4,8 +4,9 @@ import com.michal.pma.dao.EmployeeRepository;
 import com.michal.pma.entities.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -13,7 +14,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("app-api/employees")
-@Validated
 public class EmployeeApiController {
 
     @Autowired
@@ -68,5 +68,12 @@ public class EmployeeApiController {
         catch (EmptyResultDataAccessException e){
             e.printStackTrace();
         }
+    }
+
+    @GetMapping(params = {"page", "size"})
+    @ResponseStatus(HttpStatus.OK)
+    public Iterable<Employee> findPaginatedEmployees(@RequestParam int page, @RequestParam int size){
+        Pageable pageAndSize = PageRequest.of(page, size);
+        return employeeRepository.findAll(pageAndSize);
     }
 }

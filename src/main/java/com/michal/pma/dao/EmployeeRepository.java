@@ -3,12 +3,13 @@ package com.michal.pma.dao;
 import com.michal.pma.dto.EmployeeProject;
 import com.michal.pma.entities.Employee;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.validation.annotation.Validated;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
 
-public interface EmployeeRepository extends CrudRepository<Employee, Long> {
+@RepositoryRestResource(collectionResourceRel = "apiemployees", path = "apiemployees")
+public interface EmployeeRepository extends PagingAndSortingRepository<Employee, Long> {
     @Override
     List<Employee> findAll();
 
