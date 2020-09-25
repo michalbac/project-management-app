@@ -5,9 +5,7 @@ import com.michal.pma.services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -35,6 +33,20 @@ public class EmployeeController {
         List<Employee> employees = employeeService.findAll();
         model.addAttribute("employees", employees);
         return "employees/all-employees";
+    }
+
+    @GetMapping("/delete")
+    public String deleteEmployee(@RequestParam long id){
+        employeeService.deleteById(id);
+        return"redirect:/employees";
+
+    }
+
+    @GetMapping("/update")
+    public String displayEmployeeUpdateForm(@RequestParam long id, Model model){
+        Employee employee = employeeService.findById(id);
+        model.addAttribute("employee", employee);
+        return "employees/new-employee";
     }
 
 }
