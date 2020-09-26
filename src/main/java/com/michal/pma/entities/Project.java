@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Getter
@@ -17,8 +19,16 @@ public class Project{
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "project_seq")
     @SequenceGenerator(name = "project_seq", sequenceName = "project_seq", allocationSize = 1)
     private Long projectId;
+
+    @NotBlank
+    @Size(min = 1, max = 100)
     private String name;
+
+    @NotBlank
     private String stage;
+
+    @NotBlank
+    @Size(min = 1, max = 2000)
     private String description;
 
     @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST},

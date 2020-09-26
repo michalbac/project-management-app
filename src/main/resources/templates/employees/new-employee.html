@@ -12,15 +12,18 @@
     <div class="form-group">
         <input type="hidden" th:field="${employee.employeeId}">
     <input class="form-control" type="text" placeholder="First name" th:field="${employee.firstName}">
+        <span style="color:red" th:if="${#fields.hasErrors('firstName')}" th:errors="${employee.firstName}"></span>
     </div>
     <div class="form-group">
     <input class="form-control" type="text" placeholder="Last name" th:field="${employee.lastName}">
+        <span style="color:red" th:if="${#fields.hasErrors('lastName')}" th:errors="${employee.lastName}"></span>
     </div>
     <div class="form-group">
     <input class="form-control" type="text" placeholder="email" th:field="${employee.email}">
+        <span style="color:red" th:if="${#fields.hasErrors('email')}" th:errors="${employee.email}"></span>
     </div>
     <div class="form-group">
-    <button class="btn btn-primary btn-sm mb-3" type="submit">Create Employee</button>
+    <button class="btn btn-primary btn-sm mb-3" type="submit">Save Employee</button>
     </div>
     </form>
 </div>

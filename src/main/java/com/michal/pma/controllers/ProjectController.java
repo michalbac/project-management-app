@@ -1,16 +1,16 @@
 package com.michal.pma.controllers;
 
-import com.michal.pma.dao.EmployeeRepository;
 import com.michal.pma.entities.Employee;
 import com.michal.pma.entities.Project;
+import com.michal.pma.services.EmployeeService;
 import com.michal.pma.services.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -21,19 +21,24 @@ public class ProjectController {
     ProjectService projectService;
 
     @Autowired
-    EmployeeRepository employeeRepository;
+    EmployeeService employeeService;
 
     @RequestMapping(value = "/new", method = RequestMethod.GET)
     public String displayProjectForm(Model model){
         Project aProject = new Project();
-        List<Employee> employees = employeeRepository.findAll();
+        List<Employee> employees = employeeService.findAll();
         model.addAttribute("allEmployees", employees);
         model.addAttribute("project", aProject);
         return "projects/new-project";
     }
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
-    public String createProject(Project project, Model model){
+    public String createProject(@ModelAttribute("project") @Valid Project project, Errors errors, Model model){
+        if(errors.hasErrors()){
+            List<Employee> employees = employeeService.findAll();
+            model.addAttribute("allEmployees", employees);
+            return "projects/new-project";
+        }
         projectService.save(project);
         return "redirect:/projects";
     }
@@ -43,6 +48,21 @@ public class ProjectController {
         List<Project> projects = projectService.findAll();
         model.addAttribute("projects", projects);
         return"projects/all-projects";
+    }
+
+    @GetMapping("/update")
+    public String displayProjectUpdateForm(@RequestParam long id, Model model){
+        Project project = projectService.getProjectById(id);
+        List<Employee> employees = employeeService.findAll();
+        model.addAttribute("allEmployees", employees);
+        model.addAttribute("project", project);
+        return "projects/new-project";
+    }
+
+    @GetMapping("/delete")
+    public String deleteProject(@RequestParam long id){
+        projectService.deleteById(id);
+        return "redirect:/projects";
     }
 
 }
