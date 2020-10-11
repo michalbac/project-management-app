@@ -42,13 +42,15 @@
     <div class="form-group">
         Project Start Date:
         <input id="db3" type="text" class="mb-4 col-2 col-xs-4" value="Start date" placeholder="Select start date"  th:field="${project.startDate}">
+        <span style="color:red" th:if="${#fields.hasErrors('startDate')}" th:errors="${project.startDate}"></span>
         <br>
         Project End Date:
         <input id="db4" type="text" class="mb-4 col-2 col-xs-4" value="End date" placeholder="Select end date" th:field="${project.endDate}">
+        <span style="color:red" th:if="${#fields.hasErrors('endDate')}" th:errors="${project.endDate}"></span>
     </div>
     <script>
-        $( "#db3" ).datepicker();
-        $( "#db4" ).datepicker();
+        $( "#db3" ).datepicker({ dateFormat: 'yy-mm-dd' });
+        $( "#db4" ).datepicker({ dateFormat: 'yy-mm-dd' });
     </script>
     <button type="submit" class="btn btn-primary btn-sm mb-3">Save Project</button>
 

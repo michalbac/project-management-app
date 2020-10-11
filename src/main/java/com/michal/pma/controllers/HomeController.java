@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.michal.pma.dto.ChartData;
 import com.michal.pma.dto.EmployeeProject;
+import com.michal.pma.dto.TimelineData;
 import com.michal.pma.entities.Project;
 import com.michal.pma.services.EmployeeService;
 import com.michal.pma.services.ProjectService;
@@ -36,6 +37,10 @@ public class HomeController {
         ObjectMapper objectMapper = new ObjectMapper();
         String jsonString = objectMapper.writeValueAsString(projectData);
         model.addAttribute("projectStatus", jsonString);
+
+        List<TimelineData> timelineData = projectService.getTimelineData();
+        String jsonStringTimeline = objectMapper.writeValueAsString(timelineData);
+        model.addAttribute("timelineData", jsonStringTimeline);
 
         List<EmployeeProject> employeesProjectCount = employeeService.getEmployeeProjects();
         model.addAttribute("employeesProjectCount", employeesProjectCount);

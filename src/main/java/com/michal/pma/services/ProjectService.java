@@ -2,6 +2,7 @@ package com.michal.pma.services;
 
 import com.michal.pma.dao.ProjectRepository;
 import com.michal.pma.dto.ChartData;
+import com.michal.pma.dto.TimelineData;
 import com.michal.pma.entities.Project;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,6 +28,10 @@ public class ProjectService {
 
     public List<ChartData> getProjectsStatus(){
         return projectRepository.getProjectsStatus();
+    }
+
+    public List<TimelineData> getTimelineData(){
+        return projectRepository.getProjectTimeline();
     }
 
     public Project getProjectById(long id){

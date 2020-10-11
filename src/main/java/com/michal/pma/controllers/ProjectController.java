@@ -1,5 +1,8 @@
 package com.michal.pma.controllers;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.michal.pma.dto.TimelineData;
 import com.michal.pma.entities.Employee;
 import com.michal.pma.entities.Project;
 import com.michal.pma.services.EmployeeService;
@@ -63,6 +66,15 @@ public class ProjectController {
     public String deleteProject(@RequestParam long id){
         projectService.deleteById(id);
         return "redirect:/projects";
+    }
+
+    @GetMapping("/timelines")
+    public String displayProjectTimelines(Model model) throws JsonProcessingException {
+        List<TimelineData> timelineData = projectService.getTimelineData();
+        ObjectMapper objectMapper = new ObjectMapper();
+        String jsonStringTimeline = objectMapper.writeValueAsString(timelineData);
+        model.addAttribute("timelineData", jsonStringTimeline);
+        return "projects/project-timelines";
     }
 
 }
